@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+}
+.logo {
+  color: white;
+  padding: 12px;
+  font-size: 2.5vmin;
+  left: 25px;
+  position: absolute;
+  font-weight: 650;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 117, 30);
+  font-size: 2vmin;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+.navbar a:hover {
+  background-color: rgb(197, 197, 197);
+  color: black;
+}
+.courses {
+  padding: 15px;
+  color: rgb(255, 255, 255);
+}
+.courses:hover {
+  background-color: rgb(197, 197, 197);
+  color: black;
+}
+
+.dropdown-courses {
+  display: none;
+  min-width: 135px;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-courses a {
+  display: block;
+  padding: 10px;
+  color: black;
+}
+.dropdown:hover .dropdown-courses {
+  display: block;
+}
+.img {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  display: none;
+}
+.img img {
+  width: 5vmin;
+  cursor: pointer;
+}
+.menu {
+  min-width: 250px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  right: -35%;
+  transition: 0.5s;
+  z-index: 2;
+  display: none;
+}
+.drop {
+  padding: 10px;
+}
+.drop img {
+  width: 1.5vmin;
+  padding: 10px;
+  cursor: pointer;
+}
+.drop a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+}
+.drop a:hover {
+  color: rgb(40, 40, 40);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    font-size: 3vmin;
+  }
+  .navbar {
+    padding: 25px;
+  }
+  .navbar a {
+    display: none;
+  }
+  .courses {
+    display: none;
+  }
+  .img {
+    display: block;
+  }
+  .menu {
+    right: -100%;
+    display: block;
+    min-width: 200px;
+  }
+  .drop a {
+    font-size: 2.5vmin;
+  }
+  .drop img {
+    width: 2vmin;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 5vmin;
+    left: 15px;
+    top: 2px;
+  }
+  .img {
+    top: 12px;
+  }
+  .img img {
+    width: 6vmin;
+    cursor: pointer;
+  }
+  .drop a {
+    font-size: 2.5vmin;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo {
+    font-size: 5.5vmin;
+    left: 15px;
+    top: 3px;
+  }
+  .img img {
+    width: 8vmin;
+    cursor: pointer;
+  }
+  .img {
+    top: 12px;
+  }
+  .drop a {
+    font-size: 4vmin;
+  }
+  .drop img {
+    width: 2.7vmin;
+  }
+}
